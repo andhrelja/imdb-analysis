@@ -41,7 +41,7 @@
     
   - Stabla odlučivanja
   - Slučajne šume
-  - Support Vector Machine
+  - Logistička regresija
   - MLPClassifier
 
 
