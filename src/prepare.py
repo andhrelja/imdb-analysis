@@ -30,7 +30,7 @@ def download_data():
     for url in files:
         print("Downloading {}".format(url))
         
-        filepath = os.path.join(settings.DATASET_DIR, os.path.basename(url))
+        filepath = os.path.join(settings.RAW_DIR, os.path.basename(url))
         if os.path.exists(filepath):
             continue
         
@@ -54,7 +54,7 @@ def get_title_basics(title_basics_df):
 
 
 def get_title_principals(title_principals_df):
-    title_principals = title_principals_df.loc[(title_principals_df['category'] == 'director')]
+    title_principals = title_principals_df.loc[title_principals_df['category'] == 'director', :]
     title_principals['ordering'] = title_principals.sort_values(['tconst', 'ordering']) \
         .groupby(['tconst']) \
         .cumcount() + 1
@@ -65,10 +65,10 @@ def prepare_titles_df():
     start = time.time()
 
     print("Reading datasets")
-    title_basics_df = pd.read_csv(os.path.join(settings.DATASET_DIR, 'title.basics.tsv.gz'), compression='gzip', sep='\t')
-    title_ratings_df = pd.read_csv(os.path.join(settings.DATASET_DIR, 'title.ratings.tsv.gz'), compression='gzip', sep='\t')
-    title_principals_df = pd.read_csv(os.path.join(settings.DATASET_DIR, 'title.principals.tsv.gz'), compression='gzip', sep='\t')
-    name_basics_df = pd.read_csv(os.path.join(settings.DATASET_DIR, 'name.basics.tsv.gz'), compression='gzip', sep='\t')
+    title_basics_df = pd.read_csv(os.path.join(settings.RAW_DIR, 'title.basics.tsv.gz'), compression='gzip', sep='\t')
+    title_ratings_df = pd.read_csv(os.path.join(settings.RAW_DIR, 'title.ratings.tsv.gz'), compression='gzip', sep='\t')
+    title_principals_df = pd.read_csv(os.path.join(settings.RAW_DIR, 'title.principals.tsv.gz'), compression='gzip', sep='\t')
+    name_basics_df = pd.read_csv(os.path.join(settings.RAW_DIR, 'name.basics.tsv.gz'), compression='gzip', sep='\t')
     name_basics_df = name_basics_df.rename(columns={'primaryName': 'directorName'})
 
     print("Transforming merged title_basics")
@@ -89,7 +89,7 @@ def prepare_titles_df():
     title_basics_df = titles_df[TITLES_DTYPE.keys()].astype(TITLES_DTYPE)
     print(titles_df.info())
 
-    title_basics_df.to_csv(os.path.join(settings.DATASET_DIR, 'master.csv'), index=False, quoting=csv.QUOTE_ALL)
+    title_basics_df.to_csv(os.path.join(settings.RAW_DIR, 'master.csv'), index=False, quoting=csv.QUOTE_ALL)
     print("Dataframe saved")
 
     end = time.time()

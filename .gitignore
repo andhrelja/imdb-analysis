@@ -1,4 +1,5 @@
-dataset/
+src/dataset/raw/
+src/dataset/master.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
