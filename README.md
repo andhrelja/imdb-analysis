@@ -1,8 +1,8 @@
-# Otkrivanje znanja u podacima - 
+# Otkrivanje znanja u podacima - Završni rad
 
 - Diplomski studij
 - Odjel za informatiku, Sveučilište u Rijeci
-- Završni ispit, 2021/2022
+- Završni rad, 2021/2022
 - Autori: Andrea Hrelja i Mario Sliško
 
 <img src="assets/imdb-logo.png" alt="IMDb logo" width="200"/>
