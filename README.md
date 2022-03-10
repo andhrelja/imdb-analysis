@@ -3,7 +3,13 @@
 - Diplomski studij
 - Odjel za informatiku, Sveučilište u Rijeci
 - Završni rad, 2021/2022
-- Autori: Andrea Hrelja i Mario Sliško
+
+- Nositelji kolegija:
+  - prof. dr. sc. Maja Matetić
+  - mag. educ. math. et inf. Dejan Ljubobratović
+- Autori: 
+  - Andrea Hrelja
+  - Mario Sliško
 
 
 ## Opis zadatka
