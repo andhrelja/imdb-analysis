@@ -1,11 +1,16 @@
-# Otkrivanje znanja u podacima
+# Otkrivanje znanja u podacima - 
 
 - Diplomski studij
 - Odjel za informatiku, Sveučilište u Rijeci
 - Završni ispit, 2021/2022
+- Autori: Andrea Hrelja i Mario Sliško
+
+<img src="assets/imdb-logo.png" alt="IMDb logo" width="200"/>
+
+**Opis zadatka**: Potrebno je izvršiti analizu podataka po fazama kao što su opisani u knjizi (Data Science Using Python and R, Daniel T. Larose), prema načelima metodologije podatkovnih znanosti. Analizira se IMDb skup podataka - nastoji se predvidjeti prosječnu ocjenu filma na temelju redatelja i žanra kojeg režisira.
+
 
 ## Sadržaj
-
 
 1.	Razumijevanje problema
 2.	Priprema podataka
