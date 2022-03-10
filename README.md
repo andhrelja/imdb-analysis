@@ -1,9 +1,6 @@
 # Otkrivanje znanja u podacima - Završni rad
 
 - Diplomski studij
-- Odjel za informatiku, Sveučilište u Rijeci
-- Završni rad, 2021/2022
-
 - Nositelji kolegija:
   - prof. dr. sc. Maja Matetić
   - mag. educ. math. et inf. Dejan Ljubobratović
@@ -11,6 +8,8 @@
   - Andrea Hrelja
   - Mario Sliško
 
+- Odjel za informatiku, Sveučilište u Rijeci
+- Završni rad, 2021/2022
 
 ## Opis zadatka
 <img src="assets/imdb-logo.png" alt="IMDb logo" width="200"/>
